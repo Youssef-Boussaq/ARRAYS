@@ -1,0 +1,15 @@
+N = int(input("Entrez la taille des tableaux : "))
+
+T1 = []
+T2 = []
+for i in range(N):
+    val = int(input(f"Entrez la valeur {i+1} pour le tableau T1 : "))
+    T1.append(val)
+
+for i in range(N):
+    val = int(input(f"Entrez la valeur {i+1} pour le tableau T2 : "))
+    T2.append(val)
+
+T = [T1[i] + T2[i] for i in range(N)]
+
+print("Le tableau T est :", T)
